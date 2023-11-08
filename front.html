@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+</head>
+<body>
+    <h1>Your calendar</h1>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.title }} - {{ event.date.strftime('%Y-%m-%d') }}</li>
+        {% endfor %}
+    </ul>
+    <form method="post" action="/add_event">
+        <label for="title">Name of event:</label>
+        <input type="text" name="title" id="title" required>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required>
+        <button type="submit">Add event</button>
+    </form>
+</body>
+</html>
