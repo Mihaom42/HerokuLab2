@@ -3,6 +3,7 @@ aiohttp-jinja2==1.5
 aioopenssl==0.6.0
 aiosasl==0.5.0
 aioxmpp==0.13.3
+alembic==1.12.1
 arrow==1.2.3
 async-timeout==3.0.1
 attrs==23.1.0
@@ -19,6 +20,7 @@ cryptography==40.0.2
 cycler==0.11.0
 dnspython==2.3.0
 Flask==3.0.0
+Flask-Migrate==4.0.5
 Flask-SQLAlchemy==3.1.1
 fonttools==4.39.0
 fuzzyset==0.1.2
@@ -33,6 +35,7 @@ jinja2-time==0.2.0
 kiwisolver==1.4.4
 Levenshtein==0.21.1
 lxml==4.9.2
+Mako==1.2.4
 MarkupSafe==2.1.2
 matplotlib==3.7.1
 multidict==4.5.2
