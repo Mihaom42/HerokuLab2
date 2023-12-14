@@ -4,8 +4,8 @@ from flask_migrate import Migrate
 from datetime import datetime
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///calendar.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://lzfrvzpibdnern:d44df762448bfc51210d94c30cd365fd2b189185ac1b900fe0b9f57226acd620@ec2-44-215-22-37.compute-1.amazonaws.com:5432/dan84hpffdpf0n'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///calendar.db'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mycalendardb.cciw9jdxdfpw.eu-north-1.rds.amazonaws.com'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
